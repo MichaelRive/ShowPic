@@ -1,0 +1,76 @@
+.add-container {
+    margin: 30px auto 0 auto;
+    width: 100%;
+    max-width: 800px;
+    max-height: 1000px;
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(112, 112, 112);
+    border-width: 1px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 0.8em;
+    border-radius: 20px;
+    color: white;
+    padding: 9px 28px;
+}
+
+.Button1 {
+    background-color: #6F6F6F;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.Button2 {
+    background-color: #2b2b2b;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px; 
+    margin-bottom: 20px; 
+    color: #d6d6d6
+}
+
+#container {
+    padding-top: 35px;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.comentario {
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.label {
+    color: rgb(112,112,112);
+     margin: 5px; 
+     text-align: left; 
+     font-size: 20px
+}
+
+#file {
+    /*display: none;*/
+    text-align-last: center;
+    margin: auto;
+    position: absolute;
+}
+
+#footer1 {
+    margin-top: 50%;
+    color: #d6d6d6;
+    padding-left: 20px;
+}
+
+#preview {
+    height: 250px;
+}
+
+#title {
+    font-size: 30px; 
+    text-align: left; 
+    color: rgb(112, 112, 112); 
+    margin-top: 20px; 
+    margin-left: 20px;
+}

@@ -1,0 +1,24 @@
+.story-card h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.story-card h3 {
+    font-size: 18px;
+    color: rgb(0, 132, 255);
+}
+
+.imagen-principal {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.imagen-perfil {
+    text-align: left; 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    position: relative; 
+    top: 10px 
+}

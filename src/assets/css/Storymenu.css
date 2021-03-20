@@ -1,0 +1,25 @@
+.galeria {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    list-style: none;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 10px 10px 10px 10px;
+    overflow-y: scroll;
+}
+
+.galeria li {
+    margin: 5px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgb(112, 112, 112);
+    border-radius: 10px 10px 10px 10px;
+    height: 600px;
+    width: 300px
+}
