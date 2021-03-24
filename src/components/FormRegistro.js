@@ -1,8 +1,12 @@
 import React from 'react'
 import '../assets/css/FormRegistro.css';
+import { Link } from 'react-router-dom'
 export const FormRegistro = () => {
     return (
-        
+        <div>
+            <div class="logo">
+            <img src="https://i.imgur.com/HILDEnL.png" width="500px" height="328px" alt="nose"/>
+            </div>
             <div class="f3">
             <form class="registro">
                 <div class="mb-3">
@@ -31,8 +35,11 @@ export const FormRegistro = () => {
                     <label class="form-check-label" for="accept">Acepto los t&eacute;rminos y condiciones</label>
                 </div>
                 <br/>
+                <Link to="/showpic">
                 <button type="submit" class="btn btn-primary">Registrarme</button>
+                </Link>
             </form>
+        </div>
         </div>
         
         

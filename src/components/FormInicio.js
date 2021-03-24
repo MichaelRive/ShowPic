@@ -1,7 +1,6 @@
 import React from 'react'
 import  '../assets/css/FormInicio.css';
-import {FormRegistro} from './FormRegistro';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 export const FormInicio = () => {
     
@@ -23,12 +22,13 @@ export const FormInicio = () => {
                     <input type="pass" class="form-control" id="pass" />
                 </div>
                 <br/>
-            
+            <Link to="/showpic">
                 <button type="submit" class="btn btn-primary">Iniciar Sesi&oacute;n</button>
+                </Link>
             </form>
             <br/>
             <div class="registro">
-                <a class="nav-link" href="/">¿No tienes una cuenta?, registrate aqu&iacute;</a>   
+            <Link to="/registro">¿No tienes una cuenta?, registrate aqu&iacute;</Link> 
             </div>
             </div>
         </div>

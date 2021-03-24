@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { FormInicio } from './components/FormInicio';
 import { Inicio } from './components/Inicio';
-
+import {Containerinicio} from './components/Containerinicio'
 import { Maincontainer } from './components/Maincontainer';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   
-    <FormInicio/>
+    <Containerinicio/>
   ,
   document.getElementById('root')
 );

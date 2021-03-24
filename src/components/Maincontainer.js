@@ -11,6 +11,7 @@ export const Maincontainer = () => {
             <div id="main-container">
                 <Router>
                     <Sidebar/>
+                    
                     <Route path="/inicio" component={Storymenu}/> 
                     <Route path="/agregar" component={Add}/>
                 </Router>
