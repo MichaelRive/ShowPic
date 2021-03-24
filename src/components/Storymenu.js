@@ -4,7 +4,7 @@ import '../assets/css/Storymenu.css'
 
 export const Storymenu = () => {
     return (
-        <div>
+        <div id="main-feed">
             <h1> Bienvenido</h1>
             <h1> Usuario</h1>
             <ul className="galeria">

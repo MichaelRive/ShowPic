@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../assets/css/Sidebar.css'
 
 export const Sidebar = () => {
@@ -11,14 +12,18 @@ export const Sidebar = () => {
                 </div>
             </div>
             <div id="option-menu">
-                <a href="./inicio" className="hvr-bounce-to-right"><i className="material-icons">home</i>Inicio</a>
+                <Link className="hvr-bounce-to-right" to="/inicio"><i className="material-icons">home</i>Inicio</Link>
                 <br/>
                 <br/>
-                <a href="./buscar" className="hvr-bounce-to-right"><i className="material-icons">image_search</i> Buscar Foto</a><br/>
+                <Link className="hvr-bounce-to-right" to="/buscar"><i className="material-icons">image_search</i> Buscar Foto</Link>
                 <br/>
-                <a href="agregar.html" className="hvr-bounce-to-right"><i className="material-icons">add_circle</i> Agregar Foto</a><br/><br/>
-
-                <a href="editar_foto.html" className="hvr-bounce-to-right"><i className="material-icons">brush</i> Editar Foto</a><br/><br/>
+                <br/>
+                <Link className="hvr-bounce-to-right" to="/agregar"><i className="material-icons">add_circle</i> Agregar Foto</Link>
+                <br/>
+                <br/>
+                <Link className="hvr-bounce-to-right" to="/editar"><i className="material-icons">brush</i> Editar Foto</Link>
+                <br/>
+                <br/>
                 <br/>
                 <a href="./" className="hvr-bounce-to-right"><i className="material-icons">settings</i> Configuración</a><br/><br/>
                 <a href="./" className="hvr-bounce-to-right"><i className="material-icons">exit_to_app</i> Cerrar Sesión</a><br/>

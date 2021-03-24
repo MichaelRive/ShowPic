@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../../assets/css/Search.css'
+import '../../assets/css/Add.css'
 
 export const Previewimage = () => {
 

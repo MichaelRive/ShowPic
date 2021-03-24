@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Previewimage } from './hooks/Previewimage'
 
-export const Search = () => {
+export const Add = () => {
     return (
-        <div>
+        <div id="main-feed">
             <Previewimage/>
         </div>
     )

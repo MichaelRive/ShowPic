@@ -23,3 +23,12 @@
     height: 600px;
     width: 300px
 }
+
+#main-feed {
+    width: 80%;
+    height: 100%;
+    margin: 5px;
+    border-width: 2px;
+    border-color: rgb(226, 226, 226);
+    border-style: solid;
+}
