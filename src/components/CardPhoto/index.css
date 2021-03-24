@@ -1,0 +1,33 @@
+#img-perfil{
+text-align: left; 
+width: 40px; 
+height: 40px; 
+border-radius: 50%; 
+position: relative; 
+top: 10px;
+}
+
+.lista{
+    margin: 5px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgb(112, 112, 112);
+    border-radius: 10px 10px 10px 10px;
+    height: 600px;
+    width: 300px
+}
+.lista h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.lista h3 {
+    font-size: 18px;
+    color: rgb(0, 132, 255);
+}
+
+.lista img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px 10px 10px 10px;
+}
