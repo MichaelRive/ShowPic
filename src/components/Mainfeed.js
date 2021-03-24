@@ -6,8 +6,8 @@ import { Search } from './Search'
 export const Mainfeed = () => {
     return (
         <div id="main-feed">
-            {/*<Storymenu/>*/}
-            {/*<Search/>*/}
+            <Storymenu/>
+            <Search/>
         </div>
     )
 }

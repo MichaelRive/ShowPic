@@ -6,7 +6,7 @@ export const Sidebar = () => {
         <div id="user-container">
             <div>
                 <div id="container">
-                    <img id="profile-img" src="../assets/images/logo.png" width="200" height="200" alt=""/>
+                    <img id="profile-img" src="https://i.imgur.com/HILDEnL.png" width="200" height="200" alt=""/>
                     <h3 style={{color:"#d6d6d6"}}>Nombre Usuario</h3>
                 </div>
             </div>

@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { FormInicio } from './components/FormInicio';
+import { Inicio } from './components/Inicio';
+
 import { Maincontainer } from './components/Maincontainer';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   
-    <Maincontainer/>
+    <FormInicio/>
   ,
   document.getElementById('root')
 );
