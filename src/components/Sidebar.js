@@ -14,13 +14,13 @@ export const Sidebar = () => {
             </div>
             <div id="option-menu">
                 <br/>
-                <Link className="hvr-bounce-to-right" to="/inicio"><i className="material-icons">home</i>Inicio</Link>
+                <Link className="hvr-bounce-to-right" to="/showpic/inicio"><i className="material-icons">home</i>Inicio</Link>
                 <br/>
-                <Link className="hvr-bounce-to-right" to="/buscar"><i className="material-icons">image_search</i> Buscar Foto</Link>
+                <Link className="hvr-bounce-to-right" to="/showpic/buscar"><i className="material-icons">image_search</i> Buscar Foto</Link>
                 <br/>
-                <Link className="hvr-bounce-to-right" to="/agregar"><i className="material-icons">add_circle</i> Agregar Foto</Link>
+                <Link className="hvr-bounce-to-right" to="/showpic/agregar"><i className="material-icons">add_circle</i> Agregar Foto</Link>
                 <br/>
-                <Link className="hvr-bounce-to-right" to="/editar"><i className="material-icons">brush</i> Editar Foto</Link>
+                <Link className="hvr-bounce-to-right" to="/showpic/editar"><i className="material-icons">brush</i> Editar Foto</Link>
                 <br/>
                 <br/>
                 <br/>

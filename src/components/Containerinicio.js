@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route } from 'react-router'
+import { Route, Switch } from 'react-router'
 import '../assets/css/Maincontainer.css'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { FormRegistro } from './FormRegistro'
@@ -10,11 +10,11 @@ export const Containerinicio = () => {
     return (
             <div id="main-container">
                 <Router>
-                    
-                <Route path="/" exact="true" component={FormInicio}/> 
-                <Route path="/registro" exact="true" component={FormRegistro}/> 
-                <Route path="/showpic" exact="true" component={Maincontainer}/> 
-                
+                <Switch>
+                <Route path="/" exact component={FormInicio}/> 
+                <Route path="/registro" exact component={FormRegistro}/> 
+                <Route path="/showpic" exact component={Maincontainer}/> 
+                </Switch>
                   
                 </Router>
             </div>

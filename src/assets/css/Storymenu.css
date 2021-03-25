@@ -5,7 +5,7 @@
     list-style: none;
     padding: 5px;
     box-sizing: border-box;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: space-around;
     border-style: solid;
@@ -28,6 +28,7 @@
     width: 80%;
     height: 100%;
     margin: 5px;
+    display: block;
     border-width: 2px;
     border-color: rgb(226, 226, 226);
     border-style: solid;
