@@ -6,6 +6,7 @@ import { Route } from 'react-router'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Storymenu } from './Storymenu'
 import { SearchPhoto } from './SearchPhoto/'
+import { EditPhoto } from './EditPhoto'
 
 export const Maincontainer = () => {
     return (
@@ -16,6 +17,7 @@ export const Maincontainer = () => {
                     <Route path="/inicio" component={Storymenu}/> 
                     <Route path="/agregar" component={Add}/>
                     <Route path="/buscar" component={SearchPhoto}/>
+                    <Route path="/editar" component={EditPhoto}/>
                 </Router>
             </div>
     )
