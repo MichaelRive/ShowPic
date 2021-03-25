@@ -6,28 +6,28 @@ export const FormInicio = () => {
     
     return (
 
-        <div class="forminicio">
-             <div class="logo">
+        <div className="forminicio">
+             <div className="logo">
             <img src="https://i.imgur.com/HILDEnL.png" width="500px" height="328px" alt="nose"/>
             </div>
-            <div class="f2">
-            <form class="formulario">
-                <div class="mb-3">
-                    <label for="correo" class="form-label">Correo Electr&oacute;nico</label>
-                    <input type="email" class="form-control" id="correo" />
+            <div className="f2">
+            <form className="formulario">
+                <div className="mb-3">
+                    <label htmlFor="correo" className="form-label">Correo Electr&oacute;nico</label>
+                    <input type="email" className="form-control" id="correo" />
                 </div>
                 <br/>
-                <div class="mb-3">
-                    <label for="pass" class="form-label">Contrase&ntilde;a</label>
-                    <input type="pass" class="form-control" id="pass" />
+                <div className="mb-3">
+                    <label htmlFor="pass" className="form-label">Contrase&ntilde;a</label>
+                    <input type="pass" className="form-control" id="pass" />
                 </div>
                 <br/>
             <Link to="/showpic">
-                <button type="submit" class="btn btn-primary">Iniciar Sesi&oacute;n</button>
+                <button type="submit" className="btn btn-primary">Iniciar Sesi&oacute;n</button>
                 </Link>
             </form>
             <br/>
-            <div class="registro">
+            <div className="registro">
             <Link to="/registro">¿No tienes una cuenta?, registrate aqu&iacute;</Link> 
             </div>
             </div>
