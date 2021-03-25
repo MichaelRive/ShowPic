@@ -24,8 +24,9 @@ export const Sidebar = () => {
                 <br/>
                 <br/>
                 <br/>
-                <a href="./" className="hvr-bounce-to-right"><i className="material-icons">settings</i> Configuración</a><br/>
-                <a href="./" className="hvr-bounce-to-right"><i className="material-icons">exit_to_app</i> Cerrar Sesión</a><br/>
+                <Link className="hvr-bounce-to-right" to="/showpic/configuracion"><i className="material-icons">settings</i> Configuración</Link><br/>
+                {/* <Link className="hvr-bounce-to-right" to=""><i className="material-icons">exit_to_app</i> Cerrar Sesión</Link><br/> */}
+                <a href="/" className="hvr-bounce-to-right"><i className="material-icons">exit_to_app</i> Cerrar Sesión</a><br/>
             </div>
         </div>
     )

@@ -7,11 +7,14 @@ export const Storymenu = () => {
         <div id="main-feed">
             <h1> Bienvenido</h1>
             <h1> Usuario</h1>
-            <ul className="galeria">
-                <li>
-                    <Storycard/>
-                </li>
-            </ul>
+            <div id="galeria-inicio">
+                <ul>
+                    <li>
+                        <Storycard />
+                    </li>
+                </ul>
+            </div>
+
         </div>
     )
 }

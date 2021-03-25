@@ -1,0 +1,140 @@
+#cont-config{
+    width: 99%;
+    height: 99%;
+    margin: 5px;
+    border-width: 2px;
+    border-color: rgb(226, 226, 226);
+    border-style: solid;
+}
+
+#panel-config{
+    width: 50%;
+    height: 99%;
+    margin: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#cont-user{
+}
+
+#cont-img{
+    display: inline-block;
+}
+
+#btn-img{
+    border: none; 
+    background: none;
+}
+
+#cont-nomUser{
+    display: inline-block;
+}
+
+#label-info-personal{
+    
+    
+}
+
+#label-nom {
+    display: inline-block;
+}
+
+#input-nom{
+    display: inline-block; 
+    margin: 0px 80px;
+}
+
+#label-nom_User{
+    display: inline-block;
+}
+
+#input-nom_User{
+    display: inline-block; 
+    margin: 0px 25px;
+}
+
+#label-correo{
+    display: inline-block;
+}
+
+#input-correo{
+    display: inline-block; 
+    margin: 0px 80px;
+}
+
+#label-old_pass{
+    display: inline-block;
+}
+
+#input-old_pass{
+    display: inline-block; 
+    margin: 0px 68px;
+}
+
+#label-new_passw{
+    display: inline-block;
+}
+
+#input-new_passw{
+    display: inline-block; 
+    margin: 0px 65px;
+}
+
+#label-confri_passw{
+    display: inline-block;
+}
+
+#input-confir_passw{
+    display: inline-block; 
+    margin: 0px 35px;
+}
+
+.input-config{
+    background-color: whitesmoke;
+    border: 1px solid #dbdbdb;
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #262626;
+    color: rgba(var(--i1d,38,38,38),1);
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 355px;
+    -ms-flex: 0 1 355px;
+    flex: 0 1 355px;
+    font-size: 16px;
+    height: 32px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.label-config{
+   
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 194px;
+    -ms-flex: 0 0 194px;
+    flex: 0 0 194px;
+    font-size: 20px;
+    font-weight: 600000;
+    line-height: 18px;
+    margin-top: 6px;
+    word-wrap: break-word;
+}
+
+.cont-button{
+    margin: 40px 40px;
+}
+.cont-button button{
+    color: black;
+}
+.cont-button button:hover{
+    background: silver;
+}
+
+.cont{
+    margin-left: 30px;
+    margin-top: 10px;
+}
