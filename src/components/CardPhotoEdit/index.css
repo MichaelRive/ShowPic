@@ -1,0 +1,81 @@
+.text-area{
+    border: none;
+    width: 300px;
+    height: 94px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    background: none;
+    resize:none;
+    margin-top: 5px;
+}
+
+#button-delete{
+    background-color:white;
+    border: none;
+    width: 50px;
+    margin: 0px 10px;
+}
+
+
+.cate{
+    color: rgb(0, 132, 255);
+}
+
+.cate h3{
+    font-size: 23px;
+    display: inline-block;
+}
+
+.cate input{
+    font-size: 23px;
+    margin-left: 5px;
+    border: none;
+    background: none;
+}
+
+.lista-edit{
+    margin: 5px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgb(112, 112, 112);
+    border-radius: 10px 10px 10px 10px;
+    height: 600px;
+    width: 300px;
+}
+
+
+.lista-edit img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#botones{
+    display: block;
+}
+
+#btn-aceptar{
+    background-color: gainsboro;
+    color: black;
+    border: outset;
+    outline: none;
+}
+#btn-aceptar:hover{
+    
+    background-color: slategray;
+}
+
+
+#btn-eliminar{
+    padding: 0px;
+    margin: 0px;
+    background: none;
+    border: none;
+    margin-left: 40px;
+    outline: none;
+}
+
+#i-delete{
+    margin: 0px;
+}

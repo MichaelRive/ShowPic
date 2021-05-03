@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "photo": "https://gestion.pe/resizer/DORRchmtl6n4qhG27MGVzx04LQ0=/1200x900/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/UJRR4HO2D5AE5H2PQO7BWUVIKM.jpg",
+        "descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptates accusamus iure deleniti beatae, fuga cum ex nesciunt tempore voluptas nemo, cumque veniam saepe provident!",
+        "cat": "Paisaje"
+    },
+    {
+        "id": "2",
+        "photo": "https://aws.traveler.es/prod/designs/v1/assets/1000x667/21250.jpg",
+        "descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptates accusamus iure deleniti beatae, fuga cum ex nesciunt tempore voluptas nemo, cumque veniam saepe provident!",
+        "cat": "Playa"
+    },
+    {
+        "id": "3",
+        "photo": "https://mott.pe/noticias/wp-content/uploads/2019/03/los-50-paisajes-maravillosos-del-mundo-para-tomar-fotos-1280x720.jpg",
+        "descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptates accusamus iure deleniti beatae, fuga cum ex nesciunt tempore voluptas nemo, cumque veniam saepe provident!",
+        "cat": "Playa"
+    },
+    {
+        "id": "4",
+        "photo": "https://tecnohotelnews.com/wp-content/uploads/2020/06/jeshoots-com-mSESwdMZr-A-unsplash-1.jpg.webp",
+        "descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptates accusamus iure deleniti beatae, fuga cum ex nesciunt tempore voluptas nemo, cumque veniam saepe provident!",
+        "cat": "Frio"
+    },
+    {
+        "id": "5",
+        "photo": "https://previews.123rf.com/images/grivina/grivina1609/grivina160900046/62749260-paisaje-capas-illustarted-cartel-vector-ilustraci%C3%B3n-de-dibujos-animados-de-un-paisaje-de-bosques-vuelan.jpg",
+        "descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptates accusamus iure deleniti beatae, fuga cum ex nesciunt tempore voluptas nemo, cumque veniam saepe provident!",
+        "cat": "Basket"
+    }
+]

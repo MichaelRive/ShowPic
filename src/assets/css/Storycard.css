@@ -3,6 +3,12 @@
     font-size: 15px;
 }
 
+.story-card h1 {
+    margin-left: 15px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
 .story-card h3 {
     font-size: 18px;
     color: rgb(0, 132, 255);
@@ -20,5 +26,5 @@
     height: 40px; 
     border-radius: 50%; 
     position: relative; 
-    top: 10px 
+    display: inline-block;
 }

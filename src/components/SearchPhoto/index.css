@@ -1,0 +1,32 @@
+/* Barra de busqueda */
+#ctn-bars-search{
+    width: 100%;
+    padding: 10px;
+}
+
+#ctn-bars-search input{
+    display: block;
+    width: 300px;
+    padding: 5px;
+    font-size: 15px;
+}
+#titulo-buscar{
+    font-size: 30px; 
+    text-align: left; 
+    color: #616060fa; 
+    margin: 10px;
+}
+
+#main-feed {
+    width: 99%;
+    height: 99%;
+    margin: 5px;
+    border-width: 2px;
+    border-color: rgb(226, 226, 226);
+    border-style: solid;
+}
+
+#cont-galeria {
+    width: 1060px;
+    height: 83%;
+}

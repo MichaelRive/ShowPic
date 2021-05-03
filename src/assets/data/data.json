@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "photo": "https://previews.123rf.com/images/grivina/grivina1609/grivina160900046/62749260-paisaje-capas-illustarted-cartel-vector-ilustraci%C3%B3n-de-dibujos-animados-de-un-paisaje-de-bosques-vuelan.jpg",
+        "photoUser": "https://i.pinimg.com/736x/e0/b7/e8/e0b7e895361da676c3d709170508cc39.jpg",
+        "nameUser": "Mariana Gutierrez",
+        "descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptates accusamus iure deleniti beatae, fuga cum ex nesciunt tempore voluptas nemo, cumque veniam saepe provident!",
+        "cat": "Paisaje"
+    },
+    {
+        "id": "2",
+        "photo": "https://trucoslondres.com/wp-content/uploads/2017/05/playa.jpg",
+        "photoUser": "https://i.pinimg.com/474x/9c/41/e6/9c41e6ef360bae0a75d6807398eb8061.jpg",
+        "nameUser": "Emilia Perez",
+        "descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptates accusamus iure deleniti beatae, fuga cum ex nesciunt tempore voluptas nemo, cumque veniam saepe provident!",
+        "cat": "Playa"
+    },
+    {
+        "id": "3",
+        "photo": "https://www.ngenespanol.com/wp-content/uploads/2018/08/Las-5-mejores-playas-desconocidas-en-M%C3%A9xico.jpg",
+        "photoUser": "https://i.pinimg.com/originals/aa/07/75/aa0775971c2a4046a29eec44bdd8bcef.jpg",
+        "nameUser": "Jacobo Meza",
+        "descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptates accusamus iure deleniti beatae, fuga cum ex nesciunt tempore voluptas nemo, cumque veniam saepe provident!",
+        "cat": "Playa"
+    },
+    {
+        "id": "4",
+        "photo": "https://i1.wp.com/www.mavipastor.com/wp-content/uploads/2018/01/pexels-photo-269370-e1530873548629.jpeg?w=700&ssl=1",
+        "photoUser": "https://i.pinimg.com/736x/82/5b/f3/825bf3a9927c7e78a3bc648ed3062a1d.jpg",
+        "nameUser": "Rasmus Rodriguez",
+        "descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptates accusamus iure deleniti beatae, fuga cum ex nesciunt tempore voluptas nemo, cumque veniam saepe provident!",
+        "cat": "Frio"
+    },
+    {
+        "id": "5",
+        "photo": "https://e00-marca.uecdn.es/albumes/2012/07/08/baloncesto_nike_festival/1341740595_extras_albumes_0.jpg",
+        "photoUser": "https://i.pinimg.com/474x/9c/41/e6/9c41e6ef360bae0a75d6807398eb8061.jpg",
+        "nameUser": "Emilia Perez",
+        "descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptates accusamus iure deleniti beatae, fuga cum ex nesciunt tempore voluptas nemo, cumque veniam saepe provident!",
+        "cat": "Basket"
+    }
+]

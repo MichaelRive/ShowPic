@@ -1,11 +1,11 @@
-.galeria {
+#galeria-inicio {
     width: 90%;
     height: 80%;
     margin: auto;
     list-style: none;
     padding: 5px;
     box-sizing: border-box;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: space-around;
     border-style: solid;
@@ -14,20 +14,21 @@
     overflow-y: scroll;
 }
 
-.galeria li {
+#galeria-inicio ul li {
     margin: 5px;
     border-style: solid;
     border-width: 0px;
     border-color: rgb(112, 112, 112);
     border-radius: 10px 10px 10px 10px;
     height: 600px;
-    width: 300px
+    width: 300px;
 }
 
 #main-feed {
     width: 80%;
     height: 100%;
     margin: 5px;
+    display: block;
     border-width: 2px;
     border-color: rgb(226, 226, 226);
     border-style: solid;

@@ -1,0 +1,16 @@
+.galeria {
+    width: 99%;
+    height: 99%;
+    margin: auto;
+    margin-left: 20px;
+    list-style: none;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 10px 10px 10px 10px;
+    overflow-y: scroll;
+}
