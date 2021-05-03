@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route } from 'react-router'
-import '../assets/css/Maincontainer.css'
+
 import { BrowserRouter as Router } from 'react-router-dom'
 import { FormRegistro } from './FormRegistro'
 import { FormInicio } from './FormInicio'
