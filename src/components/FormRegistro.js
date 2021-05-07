@@ -4,39 +4,39 @@ import { Link } from 'react-router-dom'
 export const FormRegistro = () => {
     return (
         <div>
-            <div class="logo">
+            <div className="logo">
             <img src="https://i.imgur.com/HILDEnL.png" width="500px" height="328px" alt="nose"/>
             </div>
-            <div class="f3">
-            <form class="registro">
-                <div class="mb-3">
-                    <label for="correo" class="form-label">Correo Electr&oacute;nico</label>
-                    <input type="email" class="form-control" id="correo"/>
+            <div className="f3">
+            <form className="registro" method="POST">
+                <div className="mb-3">
+                    <label htmlFor="correo" className="form-label">Correo Electr&oacute;nico</label>
+                    <input type="email" className="form-control" id="correo"/>
 
                 </div>
                 <br/>
-                <div class="mb-3">
-                    <label for="usuario" class="form-label">Usuario</label>
-                    <input type="text" class="form-control" id="usuario"/>
+                <div className="mb-3">
+                    <label htmlFor="usuario" className="form-label">Usuario</label>
+                    <input type="text" className="form-control" id="usuario"/>
                 </div>
                 <br/>
-                <div class="mb-3">
-                    <label for="pass" class="form-label">Contrase&ntilde;a</label>
-                    <input type="password" class="form-control" id="pass"/>
+                <div className="mb-3">
+                    <label htmlFor="pass" className="form-label">Contrase&ntilde;a</label>
+                    <input type="password" className="form-control" id="pass"/>
                 </div>
                 <br/>
-                <div class="mb-3">
-                    <label for="pass2" class="form-label">Confirmar Contrase&ntilde;a</label>
-                    <input type="password" class="form-control" id="pass2"/>
+                <div className="mb-3">
+                    <label htmlFor="pass2" className="form-label">Confirmar Contrase&ntilde;a</label>
+                    <input type="password" className="form-control" id="pass2"/>
                 </div>
                 <br/>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="accept"/>
-                    <label class="form-check-label" for="accept">Acepto los t&eacute;rminos y condiciones</label>
+                <div className="mb-3 form-check">
+                    <input type="checkbox" className="form-check-input" id="accept"/>
+                    <label className="form-check-label" htmlFor="accept">Acepto los t&eacute;rminos y condiciones</label>
                 </div>
                 <br/>
                 <Link to="/showpic">
-                <button type="submit" class="btn btn-primary">Registrarme</button>
+                <button type="submit" className="btn btn-primary">Registrarme</button>
                 </Link>
             </form>
         </div>
