@@ -17,11 +17,11 @@ export const Maincontainer = () => {
                 <Router>
                     <Sidebar/>
                     <Switch>
-                    <Route path="/showpic/inicio" component={Storymenu}/> 
-                    <Route path="/showpic/agregar" component={Add}/>
-                    <Route path="/showpic/buscar" component={SearchPhoto}/>
-                    <Route path="/showpic/editar" component={EditPhoto}/>
-                    <Route path="/showpic/configuracion" component={Config}/>
+                    <Route path="/showpic/inicio" exact component={Storymenu}/> 
+                    <Route path="/showpic/agregar" exact component={Add}/>
+                    <Route path="/showpic/buscar" exact component={SearchPhoto}/>
+                    <Route path="/showpic/editar" exact component={EditPhoto}/>
+                    <Route path="/showpic/configuracion" exact component={Config}/>
                     </Switch>
                 </Router>
                 

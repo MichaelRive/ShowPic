@@ -16,7 +16,7 @@ export const Containerinicio = () => {
                 <Switch>
                 <Route path="/" exact component={FormInicio}/> 
                 <Route path="/registro" exact component={FormRegistro}/> 
-                <Route path="/showpic" exact component={Maincontainer}/> 
+                <Route path="/showpic" component={Maincontainer}/> 
                 </Switch>
                   
                 </Router>
