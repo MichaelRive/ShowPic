@@ -1,8 +1,38 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import  '../assets/css/FormInicio.css';
-import { Link } from 'react-router-dom'
+import { BrowserRouter, Link, Redirect, Router, useHistory } from 'react-router-dom'
+import { render } from 'react-dom/cjs/react-dom.development';
+import history from './history'
 
 export const FormInicio = () => {
+    const [corre, setCorre] = useState("")
+    const [contra, setContra] = useState("")
+    const [user, setUser] = useState({})
+    const [login, setLogin] = useState(false)
+
+    const onClickButton = async(event) =>{
+        event.preventDefault()
+        const url = `http://localhost:2021/usuarios/buscar_usuario_por_correo/`+corre
+        const resp = await (await(fetch(url))).json()
+        const usuario = resp.usuario
+        setUser(usuario)
+        if(user.length == 0){
+            console.log('Correo no existe');
+        }else{
+            if(user.contrasena != contra){
+                console.log('Contraseña incorrecta');
+                window.postMessage()
+            }else{
+                console.log('contraseña valida');
+                setLogin(true)
+                window.location.reload()
+            } 
+        }
+    }
+    if(login){
+         history.push('/showpic/inicio')
+    }
+    
     
     return (
 
@@ -14,17 +44,16 @@ export const FormInicio = () => {
             <form className="formulario">
                 <div className="mb-3">
                     <label htmlFor="correo" className="form-label">Correo Electr&oacute;nico</label>
-                    <input type="email" className="form-control" id="correo" />
+                    <input type="email" className="form-control" id="correo" onChange={({target: {value}}) => setCorre(value)}/>
                 </div>
                 <br/>
                 <div className="mb-3">
                     <label htmlFor="pass" className="form-label">Contrase&ntilde;a</label>
-                    <input type="pass" className="form-control" id="pass" />
+                    <input type="pass" className="form-control" id="pass" onChange={({target:{value}})=> setContra(value)}/>
                 </div>
                 <br/>
-            <Link to="/showpic">
-                <button type="submit" className="btn btn-primary">Iniciar Sesi&oacute;n</button>
-                </Link>
+                <button type="submit" className="btn btn-primary" onClick={onClickButton}>Iniciar Sesi&oacute;n</button>
+                
             </form>
             <br/>
             <div className="registro">
