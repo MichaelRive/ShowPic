@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import  '../assets/css/FormInicio.css';
 import { Link } from 'react-router-dom'
 
 export const FormInicio = () => {
-    
+        
     return (
 
         <div className="forminicio">
@@ -19,7 +19,7 @@ export const FormInicio = () => {
                 <br/>
                 <div className="mb-3">
                     <label htmlFor="pass" className="form-label">Contrase&ntilde;a</label>
-                    <input type="pass" className="form-control" id="pass" />
+                    <input type="password" className="form-control" id="pass" />
                 </div>
                 <br/>
             <Link to="/showpic">
