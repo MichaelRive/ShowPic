@@ -3,18 +3,19 @@ import { Sidebar } from './Sidebar'
 import '../assets/css/Maincontainer.css'
 import { Add } from './Add'
 import { Route, Switch } from 'react-router'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { Router } from 'react-router-dom'
 import { Storymenu } from './Storymenu'
 import { SearchPhoto } from './SearchPhoto/'
 import { EditPhoto } from './EditPhoto/'
 import { Config } from './Config/'
 import { Containerinicio } from './Containerinicio'
 import { FormInicio } from './FormInicio'
+import history from './history'
 
 export const Maincontainer = () => {
     return (
             <div id="main-container">
-                <Router>
+                <Router history={history}>
                     <Sidebar/>
                     <Switch>
                     <Route path="/showpic/inicio" exact component={Storymenu}/> 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Previewimage } from './hooks/Previewimage'
 
 export const Add = () => {
