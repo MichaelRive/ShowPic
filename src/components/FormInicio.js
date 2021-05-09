@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import  '../assets/css/FormInicio.css';
+import { url } from './utilities/APIurl';
 import { BrowserRouter, Link, Redirect, Router, useHistory } from 'react-router-dom'
 import { render } from 'react-dom/cjs/react-dom.development';
 import history from './history'
@@ -12,14 +13,15 @@ export const FormInicio = () => {
 
     const onClickButton = async(event) =>{
         event.preventDefault()
-        const url = `http://localhost:2021/usuarios/buscar_usuario_por_correo/`+corre
-        const resp = await (await(fetch(url))).json()
+        const url2 = url+"usuarios/buscar_usuario_por_correo/"+corre
+        const resp = await (await(fetch(url2))).json()
         const usuario = resp.usuario
         setUser(usuario)
-        if(user.length == 0){
+        if(usuario.length === 0){
             console.log('Correo no existe');
         }else{
-            if(user.contrasena != contra){
+            if(usuario.contrasena !== contra){
+                console.log(contra)
                 console.log('Contraseña incorrecta');
                 window.postMessage()
             }else{
@@ -49,7 +51,7 @@ export const FormInicio = () => {
                 <br/>
                 <div className="mb-3">
                     <label htmlFor="pass" className="form-label">Contrase&ntilde;a</label>
-                    <input type="password" className="form-control" id="pass" />
+                    <input type="password" className="form-control" id="pass" onChange={({target: {value}}) => setContra(value)}/>
                 </div>
                 <br/>
                 <button type="submit" className="btn btn-primary" onClick={onClickButton}>Iniciar Sesi&oacute;n</button>
