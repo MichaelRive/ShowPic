@@ -15,7 +15,7 @@ export const Storycard = ({historia}) => {
     }, [])
     return (
         <div className="story-card">
-            <a href="./"><img className="imagen-principal" src={historia.url} alt=""/></a>
+            <a href="./"><img className="imagen-principal" src={url+"publicaciones/get_image/"+historia.url} alt=""/></a>
             <img className="imagen-perfil" src={usuario.url_foto_perfil} alt=""/> 
             <h1>{usuario.nombre}</h1>
             <h2>{historia.descripcion}</h2>
