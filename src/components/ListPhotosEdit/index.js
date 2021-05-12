@@ -6,7 +6,7 @@ export const ListPhotosEdit = ({data}) => {
         <div className="galeria">
                     {data.map(info => {
                         return (
-                            <CardPhotoEdit key={info.id} info={info} />
+                            <CardPhotoEdit key={info._id} info={info} />
                         )
                     })}
         </div>
