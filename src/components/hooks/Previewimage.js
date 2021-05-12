@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../../assets/css/Add.css';
 import Axios from 'axios';
 import Swal from 'sweetalert2';
@@ -12,11 +12,28 @@ export const Previewimage = () => {
         es_publico: true
     });
 
+    const [usuario, setUsuario] = useState({})
+    const getSesion = async()=>{
+        let url1 = url + "sesion/ver_sesion";
+        let resp = await (await(fetch(url1))).json()
+        const em = resp.sesion.correo
+
+        url1 = url + "usuarios/buscar_usuario_por_correo/" + em
+        resp = await (await(fetch(url1))).json()
+        setUsuario(resp.usuario)
+        const id = usuario._id;
+        console.log(usuario);
+    }
+
+    useEffect(() => {
+        getSesion()
+    }, [])
+
     const [estado, setEstado]= useState(false);
     const guardar=(e)=>{
         e.preventDefault();
         console.log(descripcion,tag,es_publico);
-        const postear=url+"publicaciones/upload_image/608ddf182cd0522014e8ca7d";
+        const postear=url+"publicaciones/upload_image/"+usuario._id;
         console.log(postear);
 
         const formdata=new FormData();
@@ -24,7 +41,7 @@ export const Previewimage = () => {
         formdata.append('descripcion',descripcion);
         formdata.append('tag',tag);
         formdata.append('es_publico',es_publico);
-        formdata.append('propietario','608ddf182cd0522014e8ca7d');
+        formdata.append('propietario',usuario._id);
         console.log(file.name);
         Axios.post(postear,formdata).then(resp=>{
             console.log(resp);

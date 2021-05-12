@@ -1,15 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../assets/css/Sidebar.css'
 import logo from '../assets/images/logo.png'
+import {url} from './utilities/APIurl'
 
 export const Sidebar = () => {
+    const [usuario, setUsuario] = useState({})
+    const getSesion = async()=>{
+        let url1 = url + "sesion/ver_sesion";
+        let resp = await (await(fetch(url1))).json()
+        const em = resp.sesion.correo
+
+        url1 = url + "usuarios/buscar_usuario_por_correo/" + em
+        resp = await (await(fetch(url1))).json()
+        setUsuario(resp.usuario)
+        const id = usuario._id;
+        console.log(usuario);
+    }
+
+    useEffect(() => {
+        getSesion()
+    }, [])
+
     return (
         <div id="user-container">
             <div>
                 <div id="container">
-                    <img id="profile-img" src={logo} width="200" height="200" alt=""/>
-                    <h3 style={{color:"#d6d6d6"}}>Nombre Usuario</h3>
+                    <img id="profile-img" src={usuario.url_foto_perfil} width="200" height="200" alt=""/>
+                    <h3 style={{color:"#d6d6d6"}}>{usuario.nombre}</h3>
                 </div>
             </div>
             <div id="option-menu">

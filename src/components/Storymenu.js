@@ -16,10 +16,27 @@ export const Storymenu = () => {
     useEffect(() => {
         getHistorias();
     }, [])
+
+    const [usuario, setUsuario] = useState({})
+    const getSesion = async()=>{
+        let url1 = url + "sesion/ver_sesion";
+        let resp = await (await(fetch(url1))).json()
+        const em = resp.sesion.correo
+
+        url1 = url + "usuarios/buscar_usuario_por_correo/" + em
+        resp = await (await(fetch(url1))).json()
+        setUsuario(resp.usuario)
+        const id = usuario._id;
+        console.log(usuario);
+    }
+
+    useEffect(() => {
+        getSesion()
+    }, [])
     return (
         <div id="main-feed">
             <h1> Bienvenido</h1>
-            <h1> Usuario</h1>
+            <h1> {usuario.nombre}</h1>
             <div id="galeria-inicio">
                 <ul>
                     {historias.map(historia=>(
