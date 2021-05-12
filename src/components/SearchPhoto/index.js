@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { ListPhotos } from '../ListPhotos/'
 import './index.css'
 import data from '../../assets/data/data.json'
+import { url } from '../utilities/APIurl'
 
 export const SearchPhoto = () => {
     const [text, setText] = useState("");
@@ -10,8 +11,8 @@ export const SearchPhoto = () => {
     const [infoFilter, setInfoFilter] = useState([]);
 
     const getPublicaciones= async ()=>{
-        const url = `http://localhost:2021/publicaciones/listar_publicaciones`
-        const resp = await (await(fetch(url))).json()
+        const url1 = url+"publicaciones/listar_publicaciones"
+        const resp = await (await(fetch(url1))).json()
         const {publicaciones} = resp
         setPublicaciones(publicaciones)
         setInfoFilter(publicaciones)
@@ -27,7 +28,6 @@ export const SearchPhoto = () => {
                 )
             })
             setInfoFilter(filteredData);
-            console.log(infoFilter);
         }else{
             setInfoFilter(publicaciones)
         }
@@ -36,8 +36,6 @@ export const SearchPhoto = () => {
         getPublicaciones();
 
     }, [])
-    console.log(publicaciones);
-    console.log(infoFilter);
     return (
         <div>
             <div id="main-feed">
