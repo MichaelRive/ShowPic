@@ -38,13 +38,9 @@ export const Storymenu = () => {
             <h1> Bienvenido</h1>
             <h1> {usuario.nombre}</h1>
             <div id="galeria-inicio">
-                <ul>
                     {historias.map(historia=>(
-                        <li key={historia._id}>
                             <Storycard key={historia._id} historia={historia}/>
-                        </li>
                     ))}
-                </ul>
             </div>
 
         </div>

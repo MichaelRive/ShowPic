@@ -4,6 +4,7 @@ import { url } from './utilities/APIurl';
 import { BrowserRouter, Link, Redirect, Router, useHistory } from 'react-router-dom'
 import history from './history'
 import Axios from 'axios';
+import Swal from 'sweetalert2';
 
 
 export const FormInicio = () => {
@@ -34,12 +35,19 @@ export const FormInicio = () => {
         resp = await (await (fetch(url1))).json()
         const usuario = resp.usuario
         setUser(usuario)
-        if (usuario.length === 0) {
-            console.log('Correo no existe');
+        if (usuario==null || usuario.length === 0) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Usuario no registrado',
+                text: 'Comprueba los campos o registrate.',
+              })
         } else {
             if (usuario.contrasena !== contra) {
-                console.log(contra)
-                console.log('Contraseña incorrecta');
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Contraseña incorrecta',
+                    text: 'Comprueba los campos o registrate.',
+                  })
             } else {
                 console.log('contraseña valida');
 
